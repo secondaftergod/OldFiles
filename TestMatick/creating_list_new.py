@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver import Keys
+
 from bs4 import BeautifulSoup
 from books_new import Books
 def selenium_amazon():
