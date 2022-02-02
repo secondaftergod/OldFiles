@@ -14,7 +14,7 @@ class Amazon:
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.headless = True
         driver = webdriver.Chrome(
-            executable_path='/Users/ostap/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/main/TestMatick/chromedriver',
+            executable_path='/Users/ostap/Desktop/OldFiles/TestMatick/chromedriver',
             options=options)
         driver.get(url=f'{sait}')
         driver.find_element_by_xpath(f'{filter_xpath}').click()
