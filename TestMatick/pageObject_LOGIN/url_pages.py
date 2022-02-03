@@ -6,6 +6,7 @@ class URLSeacrhLocators:
     LOCATOR_URL_SEARCH_passowrd = (By.ID, "password")
     LOCATOR_URL_NAVIGATION_Login = (By.ID, "login-button")
     LOCATOR_URL_NAVIGATION_Error_login=(By.XPATH,'//*[@id="login_button_container"]/div/form/div[3]/h3')
+    LOCATOR_URL_NAVIGATION_Login_successful=(By.XPATH,'//*[@id="shopping_cart_container"]/a')
 
 class Login(BasePage):
 
@@ -19,6 +20,9 @@ class Login(BasePage):
         return user_passwod
     def click(self):
         return self.find_element(URLSeacrhLocators.LOCATOR_URL_NAVIGATION_Login).click()
+
+    def login_successful(self):
+        return self.find_element(URLSeacrhLocators.LOCATOR_URL_NAVIGATION_Login_successful)
 
     def check_login(self):
         return self.check_error(URLSeacrhLocators.LOCATOR_URL_NAVIGATION_Error_login)
