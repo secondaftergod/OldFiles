@@ -21,5 +21,4 @@ class BasePage:
         except TimeoutException:
             return 'Login Successful'
         else:
-            raise TimeoutException('Wrong Pass or Login')
-
+            raise TimeoutException('Login WRONG')
