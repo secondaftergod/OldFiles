@@ -33,12 +33,12 @@ def selenium_parimatch():
     def login():
         login = driver.find_element_by_xpath('//*[@id="root"]/div[2]/div[2]/div/form/div[1]/div[1]/div[2]/div[2]/input')
         login.click()
-        login.send_keys('662535458')
+        login.send_keys('')
         time.sleep(1.5)
 
         password = driver.find_element_by_xpath('//*[@id="password"]')
         password.click()
-        password.send_keys('0ybtkpo8Alesia')
+        password.send_keys('')
         time.sleep(1.5)
 
         driver.find_element_by_xpath('//*[@id="root"]/div[2]/div[2]/div/form/button/span').click()
